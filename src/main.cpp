@@ -3,7 +3,7 @@
 
 #define MIDI_CHANNEL 0
 
-byte SNARE[11] = {
+byte SNARE[9] = {
     90, // sensitivity (1-100)
     10, // threshold (1-100)
     5,  // scan time (1-100)
@@ -12,9 +12,7 @@ byte SNARE[11] = {
     10, // rim threshold (1-100)
     3,  // curve type (0-4)
     38, // note (0-127)
-    40, // alternate snare
     37, // note of rim (0-127)
-    39  // alterate rim
 };
 
 HelloDrum snare(11, 10);
@@ -27,8 +25,6 @@ void setup()
 void loop()
 {
   snare.dualPiezo(SNARE[0], SNARE[1], SNARE[2], SNARE[3], SNARE[4], SNARE[5]);
-
-  // Snare
 
   if (snare.hit == true)
   {
