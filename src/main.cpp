@@ -15,7 +15,7 @@ byte SNARE[9] = {
     37, // note of rim (0-127)
 };
 
-HelloDrum snare(11, 10);
+HelloDrum snare(15, 14);
 
 void setup()
 {
