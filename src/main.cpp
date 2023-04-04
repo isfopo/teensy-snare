@@ -28,12 +28,12 @@ void loop()
 
   if (snare.hit == true)
   {
-    usbMIDI.sendNoteOn(SNARE[8], snare.velocity, MIDI_CHANNEL);
-    usbMIDI.sendNoteOff(SNARE[8], 0, MIDI_CHANNEL);
+    usbMIDI.sendNoteOn(SNARE[7], snare.velocity, MIDI_CHANNEL);
+    usbMIDI.sendNoteOff(SNARE[7], 0, MIDI_CHANNEL);
   }
   else if (snare.hitRim == true)
   {
-    usbMIDI.sendNoteOn(SNARE[10], snare.velocity, MIDI_CHANNEL);
-    usbMIDI.sendNoteOff(SNARE[10], 0, MIDI_CHANNEL);
+    usbMIDI.sendNoteOn(SNARE[8], snare.velocity, MIDI_CHANNEL);
+    usbMIDI.sendNoteOff(SNARE[8], 0, MIDI_CHANNEL);
   }
 }
